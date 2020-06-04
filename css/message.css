@@ -1,0 +1,55 @@
+/* 外层盒子 */
+#content .cont-right{ width: 800px; }
+#content .cont-right span,#content .cont-right p{
+    font-size: 13px;
+    color: #606369;
+    margin-bottom: 16px;
+}
+#content .cont-right p:after{
+    content: '*';
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+#content .cont-right>input{
+    width: 796px;
+    height: 36px;
+    border: 2px solid #e3e3e3;
+    margin-bottom: 24px;
+}
+#content .cont-right>textarea{
+    width: 796px;
+    height: 70px;
+    border: 2px solid #e3e3e3;
+    margin-bottom: 24px;
+}
+#content .cont-right>input:last-child{
+    width: 800px;
+    background: #21bcd8;
+    border: none;
+    color: #fff;
+}
+/* 多选框样式 */
+#content .cont-right>span{ 
+    margin-left: 24px;
+    margin-right: 10px;
+    position: relative; 
+    margin-bottom: 30px;
+}
+#content .cont-right>span>input{ display: none; }
+#content .cont-right>span>input + label:after{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #ccc;
+    border-radius: 9px;
+    content:'\2714';
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    left: -24px;
+}
+#content .cont-right>span>input:checked + label:after{
+    background: rgb(66, 204, 100);
+}

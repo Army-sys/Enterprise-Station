@@ -1,0 +1,16 @@
+/* 右侧内容 */
+#content .cont-right{
+    width: 900px;
+    margin-left: 28px;
+}
+#content .cont-right h5{
+    font-size: 16px;
+    line-height: 34px;
+
+}
+#content .cont-right p{
+    font-size: 14px;
+    color: #818388;
+    line-height: 34px;
+    margin-bottom: 30px;
+}

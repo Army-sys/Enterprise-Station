@@ -1,0 +1,334 @@
+/* 通栏/全屏 */
+.container-fluid {
+    width: 100%;
+    /* 解决网页最小化布局重叠问题 */
+    min-width: 1200px;
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 浮动 */
+/* 左浮动 */
+.fl { float: left; }
+/* 右浮动 */
+.fr { float: right; }
+
+/* 清除浮动 */
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* 兼容IE6 */
+.clearfix { zoom: 1; }
+
+
+/* 解决图片3px问题 */
+img { vertical-align: middle; }
+
+
+/* input边框 */
+input {
+    outline: none;
+    border: none;
+}
+
+
+/* 测试工具 */
+.bd { border: 1px solid red; }
+
+
+/* background */
+.bgc25 { background-color: #252525; }
+
+
+/* color */
+.cfff { color: #fff; }
+.c000 { color: #000; }
+.c25 { color: #252525; }
+.c15bd { color: #15bded; }
+.cb85 {  color: #bbb8b5; }
+.c6a {  color: #6a6a6a; }
+.c6b {  color: #6b6b6b; }
+.c138 { color: #818388; }
+.ca5b { color: #a5a5b1; }
+.c6039 { color: #606369; }
+
+/* font-size */
+.font12 { font-size: 12px; }
+.font13 { font-size: 13px; }
+.font14 { font-size: 14px; }
+.font15 { font-size: 15px; }
+.font18 { font-size: 18px; }
+.font20 { font-size: 20px; }
+.font22 { font-size: 22px; }
+.font24 { font-size: 24px; }
+.font28 { font-size: 28px; }
+.font30 { font-size: 30px; }
+ 
+/* font-weight */
+.fwn { font-weight: normal; }
+.fwb { font-weight: bold; }
+
+/* line-height */
+.lh26 { line-height: 26px; }
+.lh30 { line-height: 30px; }
+.lh37 { line-height: 37px; }
+
+/* text-align */
+.tac{ text-align: center; }
+
+/* text-indent */
+.ti2m{ text-indent: 2em; }
+
+
+/* padding */
+.ptb25 { padding: 25px 0; }
+
+
+/* margin */
+.mt28{ margin-top: 28px; }
+.mb16{ margin-bottom: 16px; }
+.mb30{ margin-bottom: 30px; }
+.mb50{ margin-bottom: 50px; }
+.mb70{ margin-bottom: 70px; }
+.ml10{ margin-left: 10px; }
+.ml28{ margin-left: 28px; }
+.ml60{ margin-left: 60px; }
+.ml90{ margin-left: 90px; }
+
+
+/* 居中蓝色下划线 */
+.active:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: #15bded;
+    margin: 10px auto;
+}
+
+
+/* 通用居左蓝色下划线  */
+.com-title:after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 5px;
+    background-color: #15bded;
+    margin: 10px 0;
+}
+.com-title>span {
+    margin-left: 20px;
+}
+
+
+/* 页眉 */
+/* 欢迎语 */
+#header .header-top{
+    /* height: 45px; */
+    line-height: 45px;
+}
+#header .header-top span{
+    margin-left: 24px;
+    cursor: pointer;
+}
+/* 导航栏 */
+/* 导航条 */
+#header .nav{
+    padding: 30px 0;
+}
+#header .nav>li{
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    background: olive;
+    position: relative;
+}
+#header .nav>li.cur{
+    background: orangered
+}
+
+#header .nav>li a{
+    color: #fff;
+}
+#header .nav>li p{
+    position: absolute;
+    width: 100%;
+    background-color: orangered;
+    z-index: 100;
+    display: none;
+}
+#header .nav>li p a{
+    display: block;
+    font-size: 12px;
+}
+/* #header .nav>li{
+    float: left;
+    margin-right: 60px;
+    margin-top: 40px;
+} */
+/* #header .nav>li>a{
+    font-size: 15px;
+    color: #252525;
+}
+#header .nav>li>a:hover{
+    color: #15bded;
+    text-decoration: none;
+} */
+
+
+/* 通用banner图样式 */
+#banner2{
+    height: 310px;
+    background: #f1f1f1 url(../images/banner5.jpg) no-repeat center;
+}
+/* 当前页面位置 */
+#where{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+/* 通用左侧栏 */
+#content .cont-limg{
+    width: 262px;
+    /* background: blueviolet; */
+}
+#content .cont-limg a{
+    float: left;
+    width: 261px;
+    height: 48px;
+    background: #f2f2f2;
+    line-height: 48px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+#content .cont-limg>div>a:last-child{ margin-bottom: 22px; }
+#content .cont-limg img{
+    width: 261px;
+    height: 261px;
+    background: #567;
+}
+
+/* 记录的页码 */
+#content .cont-right>.page{ 
+    width: 300px;
+    margin: 80px auto 0; 
+}
+#content .cont-right>.page>span{
+    line-height: 24px;
+    margin-left: 34px;
+    margin-right: 10px;
+}
+#content .cont-right>.page>ul>li{
+    /* width: 40px; */
+    height: 20px;
+    float: left;
+    font-size: 13px;
+    border: 1px solid #f4f4f4;
+    padding: 1px 2px;
+    margin-left: 3px;
+}
+#content .cont-right>.page>ul>li:first-child{
+    border: none;
+    color: red;
+    font-weight: bold;
+}
+
+/* 页尾 */
+#footer{
+    height: 450px;
+    background: #141414;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+/* 第一部分 */
+#footer .ftr1{
+    width: 440px;
+    /* height: 200px; */
+}
+#footer .ftr1 a{
+    display: block;
+    color: #818388;
+    font-size: 15px;
+    line-height: 37px;
+    background: url(../images/icon.jpg) no-repeat;
+    padding-left: 25px;
+}
+#footer .ftr1 a:nth-child(2){ background-position-y: 7px; }
+#footer .ftr1 a:nth-child(3){ background-position-y: -34px; }
+#footer .ftr1 a:last-child{ background-position-y: -74px; }
+/* 第二部分 */
+#footer .ftr2{
+    width: 370px;
+    /* height: 200px; */
+}
+#footer h5.com-title:after{
+    width: 48px;
+    height: 4px;
+    background-color: #318586;
+}
+#footer .ftr2 a{
+    float: left;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    color: #818388;
+    font-size: 13px;
+}
+#footer .ftr2 a:before{
+    content: '> ';
+}
+/* 第三部分 */
+#footer .ftr3{
+    width: 320px;
+    /* height: 200px; */
+}
+#footer .ftr3 .text{
+    width: 220px;
+    height: 47px;
+    text-indent: 10px;
+    background: #333;
+}
+#footer .ftr3 .text::placeholder{ 
+    color:rgba(255,255,255,0.5); 
+    font-size: 12px;
+}
+#footer .ftr3 .sbt{
+    width: 100px;
+    height: 47px;
+    background: #3aa27f;
+}
+#footer .ftr3 .sbt:hover{
+    background: #328b6e;
+}
+#footer .ftr3 a{
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    margin-left: 4px;
+    background: url(../images/fenxiang.png) no-repeat;
+    vertical-align: middle;
+}
+#footer .ftr3 a:last-child{ background-position-x: -40px; }
+/* 版权号 */
+#footer .ftr-cprt{
+    height: 80px;
+    background: #000;
+    text-align: center;
+    line-height: 80px;
+    margin-top: 80px;
+}
+
+

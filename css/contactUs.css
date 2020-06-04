@@ -1,0 +1,16 @@
+/* 地图 */
+#content .cont-right img{
+    margin: 10px 0 34px;
+}
+#content .cont-right .information{
+    width: 910px;
+    height: 210px;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#content .cont-right .information p{
+    font-size: 15px;
+    color: #818388;
+    line-height: 40px;
+}

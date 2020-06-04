@@ -1,0 +1,306 @@
+/* banner图 */
+/* 背景图 */
+#banner{
+    height: 550px;
+    background: url(../images/banner1.jpg) no-repeat center;
+    position: relative;
+}
+/* 内容 */
+#banner .banner-content{
+    width: 450px;
+    height: 210px;
+    background: url(../images/border.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#banner .banner-content>h2{
+    font-size: 42px;
+    margin: 40px auto 20px;
+}
+
+
+/* 企业文化 */
+#culture{
+    margin: 28px auto 86px;
+}
+#culture>div{
+    width: 400px;
+    height: 210px;
+    /* padding: 44px 36px 50px;     会受分辨率影响 */
+    text-align: center;
+    line-height: 24px;
+}
+#culture p{ 
+    width: 330px; 
+    margin: 0 auto;
+}
+#culture h5{
+    margin-top: 44px;
+    margin-bottom: 20px;
+}
+/* 背景图 */
+#culture .cul-cont1{
+    background: url(../images/01.jpg) no-repeat;
+}
+#culture .cul-cont2{
+    background: url(../images/02.jpg) no-repeat;
+}
+#culture .cul-cont3{
+    background: url(../images/03.jpg) no-repeat;
+}
+
+
+/* 产品展示 */
+/* 蒙版产品 */
+#proshow .products{
+    width: 600px;
+    margin-top: 14px;
+}
+#proshow .products>li{
+    /* width: 272px;
+    height: 276px; */
+    float: left;
+    margin: 28px 28px 0 0;
+    position: relative;
+}
+/* 蒙版 */
+#proshow .products>li>div{
+    width: 272px;
+    height: 276px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 蒙版标题 */
+#proshow .products>li>div>h4{
+    font-weight: normal;
+    margin-top: 100px;
+}
+/* 蒙版效果 */
+#proshow .products>li:hover div{
+    display: none;
+}
+/* 大蒙版产品 */
+#proshow .bigpro{
+    /* width: 600px;
+    height: 580px; */
+    margin-top: 42px;
+    position: relative;
+}
+/* 大蒙版产品内容 */
+#proshow .bigpro>div{
+    width: 600px;
+    height: 580px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#proshow .bigpro>div>h4{
+    margin-top: 220px;
+}
+/* 大蒙版效果 */
+#proshow .bigpro:hover div{
+    display: none;
+}
+/* 大蒙版 更多 */
+#proshow .bigpro>div>a{
+    display: block;
+    width: 138px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 23px;
+    margin: 25px auto 0;
+}
+
+
+/* 关于我们 */
+#aboutus{
+    height: 510px;
+    background: #f3f3f3 url(../images/banner3.jpg) no-repeat center;
+    margin: 50px 0 60px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#aboutus h2:after{
+    content: '';
+    display: block;
+    width: 54px;
+    height: 5px;
+    margin: 10px auto 0;
+    background: #15bded;
+    
+}
+#aboutus p{
+    width: 680px;
+    /* height: 190px; */
+    margin: 24px auto 30px;
+}
+#aboutus a{
+    display: block;
+    width: 155px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: #25bbce;
+    border-radius: 23px;
+    margin: 0 auto;
+}
+
+
+/* 新闻动态 */
+/* 内容块 */
+#news>div{
+    width: 380px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 68px;
+}
+#news>div:last-child{ margin-right: 0; }
+#news>div>ul>li{
+    border-bottom: 3px solid #ddd;
+}
+
+/* 客服联系方式 */
+#cuser{
+    height:200px;
+    width: 50px;
+    position: fixed;  
+    right: 20px; 
+    bottom: 50%; 
+    transform: translateY(50%); 
+
+   
+}
+#cuser>a{
+    float: left;
+    width: 50px;
+    height: 50px;
+     background: url(../images/bg.png) no-repeat;
+     position: relative;
+}
+#cuser .bg1{ background-position-y: 0;}
+#cuser .bg2{ background-position-y: -50px;}
+#cuser .bg3{ background-position-y: -100px;}
+#cuser .bg4{ background-position-y: -150px;}
+#cuser span{  
+    width:200px;
+    height:50px;
+    background-color: blue;
+    position: absolute;
+    right: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: cornsilk;
+    display:none;
+   
+}
+
+#modalBox{
+    background-color: rgba(0,0, 0, 0.6);
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+   display: none;
+}
+ #modalBox .login-box{
+    width: 300px; 
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+    padding: 20px;
+}
+#modalBox .login-box h2{
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+#modalBox .login-box input{
+    border:1px solid #ccc;
+    width: 100%;height: 40px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    text-indent: 20px;
+}
+
+
+#modalBox .login-box input[type='submit']{
+    color:#fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-indent: 0;
+}
+#modalBox .login-box .p1{
+    position: relative;
+}
+#modalBox .img1{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    display:none;
+
+}
+#modalBox .login-box .p2{
+    position: relative;
+}
+#modalBox .img2{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    /* display:none;    */
+}
+#modalBox .login-box .p1 .yh{
+       position: absolute;
+       top: 50px; 
+       left: 10px;
+       color: red;
+}
+#modalBox .login-box .p2 .ym{
+    position: absolute;
+    top: 50px; 
+    left: 10px;
+    color: red;
+}
+#modalBox .login-box .hiddend{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top:0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align:center;
+    background-color:#ccc;
+    cursor: pointer;
+}
+#ftime{
+    height: 100px;
+    width: 400px;
+    background: pink;
+    text-align: center;
+    margin-left: 180px;
+    line-height: 50px;
+    font-size: 16px;
+    color:#2e6da4;
+}
